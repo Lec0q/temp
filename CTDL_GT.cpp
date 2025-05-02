@@ -21,12 +21,12 @@ typedef struct {
     NODE *head, *tail;
 } DLIST;
 
-// Khởi tạo danh sách
+
 void create_list(DLIST *list) {
     list->head = list->tail = NULL;
 }
 
-// Thêm node ở cuối
+
 void add_node_tail(DLIST *list, NODE *p) {
     p->next = NULL;
     if (list->tail == NULL) {
@@ -233,7 +233,7 @@ int main(void) {
         printf("0. Exit\n");
         printf("Choice: ");
         scanf("%d", &opt);
-        getchar(); // bỏ newline
+        getchar(); 
 
         switch (opt) {
             case 1:
